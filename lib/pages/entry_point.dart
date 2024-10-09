@@ -5,6 +5,7 @@ import 'package:core_dashboard/shared/widgets/sidemenu/tab_sidebar.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/widgets/header.dart';
+import '../shared/widgets/bottom_nav.dart';
 import 'dashboard/dashboard_page.dart';
 
 final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
@@ -41,7 +42,8 @@ class EntryPoint extends StatelessWidget {
                     ),
                   ),
                 ),
-                Header(drawerKey: _drawerKey),
+                if (Responsive.isMobile(context))
+                  BottomNav(drawerKey: _drawerKey),
               ],
             ),
           )
