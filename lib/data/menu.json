@@ -1,0 +1,29 @@
+[
+  {
+    "menu": "Dashboard",
+    "icon": "assets/icons/home_filled.svg",
+    "route": "",
+    "children": []
+  },
+  {
+    "menu": "Products",
+    "icon": "assets/icons/diamond_light.svg",
+    "route": "",
+    "children": [
+      { "name": "All Products", "route": "" },
+      { "name": "Add Product", "route": "" }
+    ]
+  },
+  {
+    "menu": "Customers",
+    "icon": "assets/icons/profile_circled_light.svg",
+    "route": "",
+    "children": []
+  },
+  {
+    "menu": "Shop",
+    "icon": "assets/icons/store_light.svg",
+    "route": "",
+    "children": []
+  }
+]
