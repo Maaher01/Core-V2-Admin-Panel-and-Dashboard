@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../theme/app_colors.dart';
-import '../../constants/ghaps.dart';
+import '../../constants/gaps.dart';
 
 class CustomerAvatar extends StatefulWidget {
   const CustomerAvatar({

@@ -2,7 +2,7 @@ import 'package:core_dashboard/responsive.dart';
 import 'package:core_dashboard/shared/widgets/avatar/customer_avaatar.dart';
 import 'package:flutter/material.dart';
 
-import '../../../shared/constants/ghaps.dart';
+import '../../../shared/constants/gaps.dart';
 
 class CoustomersOverview extends StatelessWidget {
   const CoustomersOverview({

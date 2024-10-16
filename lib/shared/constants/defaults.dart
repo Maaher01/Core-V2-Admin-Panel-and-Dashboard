@@ -10,6 +10,7 @@ class AppDefaults {
         Radius.circular(AppDefaults.borderRadius),
       ),
       borderSide: BorderSide.none);
-  static OutlineInputBorder focusedOutlineInputBorder = outlineInputBorder
-      .copyWith(borderSide: BorderSide(width: 2, color: AppColors.primary));
+  static OutlineInputBorder focusedOutlineInputBorder =
+      outlineInputBorder.copyWith(
+          borderSide: const BorderSide(width: 2, color: AppColors.primary));
 }

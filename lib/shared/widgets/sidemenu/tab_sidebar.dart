@@ -1,10 +1,11 @@
 import 'package:core_dashboard/services/menu_service.dart';
 import 'package:core_dashboard/shared/constants/config.dart';
 import 'package:core_dashboard/shared/constants/defaults.dart';
-import 'package:core_dashboard/shared/constants/ghaps.dart';
+import 'package:core_dashboard/shared/constants/gaps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 import 'icon_tile.dart';
 
@@ -59,7 +60,9 @@ class TabSidebarState extends State<TabSidebar> {
                           children: [
                             IconTile(
                               iconSrc: menuItem['icon'],
-                              onPressed: () {},
+                              onPressed: () {
+                                context.go(menuItem['route']);
+                              },
                             ),
                             const SizedBox(height: 8.0)
                           ],

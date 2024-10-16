@@ -1,9 +1,10 @@
 import 'package:core_dashboard/responsive.dart';
 import 'package:core_dashboard/shared/constants/defaults.dart';
-import 'package:core_dashboard/shared/constants/ghaps.dart';
+import 'package:core_dashboard/shared/constants/gaps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:core_dashboard/services/menu_service.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../constants/config.dart';
 import 'menu_tile.dart';
@@ -78,8 +79,7 @@ class Sidebar extends StatelessWidget {
                                   iconSrc: "",
                                   title: child['name'],
                                   onPressed: () {
-                                    Navigator.pushNamed(
-                                        context, child['route']);
+                                    context.go(child['route']);
                                   },
                                 ),
                               );
@@ -91,7 +91,7 @@ class Sidebar extends StatelessWidget {
                           title: item['menu'],
                           iconSrc: item['icon'],
                           onPressed: () {
-                            Navigator.pushNamed(context, item['route']);
+                            context.go(item['route']);
                           },
                         );
                       }

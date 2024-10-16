@@ -2,28 +2,28 @@
   {
     "menu": "Dashboard",
     "icon": "assets/icons/home_filled.svg",
-    "route": "",
+    "route": "/",
     "children": []
   },
   {
     "menu": "Products",
     "icon": "assets/icons/diamond_light.svg",
-    "route": "",
+    "route": "/all-products",
     "children": [
-      { "name": "All Products", "route": "" },
-      { "name": "Add Product", "route": "" }
+      { "name": "All Products", "route": "/all-products" },
+      { "name": "Add Product", "route": "/add-product" }
     ]
   },
   {
     "menu": "Customers",
     "icon": "assets/icons/profile_circled_light.svg",
-    "route": "",
+    "route": "/customers",
     "children": []
   },
   {
     "menu": "Shop",
     "icon": "assets/icons/store_light.svg",
-    "route": "",
+    "route": "/shop",
     "children": []
   }
 ]

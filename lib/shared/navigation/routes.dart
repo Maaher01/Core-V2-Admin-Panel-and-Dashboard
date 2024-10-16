@@ -1,6 +1,11 @@
+import 'package:core_dashboard/pages/customers/customers_page.dart';
+import 'package:core_dashboard/pages/dashboard/dashboard_page.dart';
+import 'package:core_dashboard/pages/products/add_product_page.dart';
+import 'package:core_dashboard/pages/products/all_products_page.dart';
 import 'package:core_dashboard/pages/authentication/register_page.dart';
 import 'package:core_dashboard/pages/authentication/sign_in_page.dart';
 import 'package:core_dashboard/pages/entry_point.dart';
+import 'package:core_dashboard/pages/shop/shop_page.dart';
 import 'package:go_router/go_router.dart';
 
 final routerConfig = GoRouter(
@@ -8,7 +13,7 @@ final routerConfig = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const EntryPoint(),
+      builder: (context, state) => const EntryPoint(child: DashboardPage()),
     ),
     GoRoute(
       path: '/sign-in',
@@ -17,6 +22,22 @@ final routerConfig = GoRouter(
     GoRoute(
       path: '/register',
       builder: (context, state) => const RegisterPage(),
+    ),
+    GoRoute(
+      path: '/all-products',
+      builder: (context, state) => const EntryPoint(child: AllProducts()),
+    ),
+    GoRoute(
+      path: '/add-product',
+      builder: (context, state) => const EntryPoint(child: AddProduct()),
+    ),
+    GoRoute(
+      path: '/customers',
+      builder: (context, state) => const EntryPoint(child: Customers()),
+    ),
+    GoRoute(
+      path: '/shop',
+      builder: (context, state) => const EntryPoint(child: Shop()),
     ),
     // GoRoute(
     //   path: '/entry-point',

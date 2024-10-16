@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../theme/app_colors.dart';
 import '../../constants/defaults.dart';
-import '../../constants/ghaps.dart';
+import '../../constants/gaps.dart';
 
 class TabWithGrowth extends StatelessWidget {
   const TabWithGrowth({

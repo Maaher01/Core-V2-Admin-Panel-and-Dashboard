@@ -6,12 +6,13 @@ import 'package:flutter/material.dart';
 
 import '../shared/widgets/header.dart';
 import '../shared/widgets/bottom_nav.dart';
-import 'dashboard/dashboard_page.dart';
 
 final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
 
 class EntryPoint extends StatelessWidget {
-  const EntryPoint({super.key});
+  final Widget child;
+
+  const EntryPoint({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,7 @@ class EntryPoint extends StatelessWidget {
                             horizontal: AppDefaults.padding *
                                 (Responsive.isMobile(context) ? 1 : 1.5),
                           ),
-                          child: const SafeArea(child: DashboardPage()),
+                          child: SafeArea(child: child),
                         ),
                       ],
                     ),

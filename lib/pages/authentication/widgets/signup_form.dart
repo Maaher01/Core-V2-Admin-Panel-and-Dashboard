@@ -1,5 +1,5 @@
 import 'package:core_dashboard/shared/constants/extensions.dart';
-import 'package:core_dashboard/shared/constants/ghaps.dart';
+import 'package:core_dashboard/shared/constants/gaps.dart';
 import 'package:core_dashboard/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

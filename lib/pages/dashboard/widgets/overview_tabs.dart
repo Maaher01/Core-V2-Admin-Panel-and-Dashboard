@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../shared/constants/defaults.dart';
-import '../../../shared/constants/ghaps.dart';
+import '../../../shared/constants/gaps.dart';
 import '../../../shared/widgets/tabs/tab_with_growth.dart';
 import '../../../theme/app_colors.dart';
 import 'customers_overview.dart';

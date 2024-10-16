@@ -1,6 +1,6 @@
 import 'package:core_dashboard/pages/dashboard/widgets/comment_item.dart';
 import 'package:core_dashboard/shared/constants/defaults.dart';
-import 'package:core_dashboard/shared/constants/ghaps.dart';
+import 'package:core_dashboard/shared/constants/gaps.dart';
 import 'package:core_dashboard/shared/widgets/section_title.dart';
 import 'package:core_dashboard/theme/app_colors.dart';
 import 'package:flutter/material.dart';
