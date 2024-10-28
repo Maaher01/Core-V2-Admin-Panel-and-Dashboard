@@ -24,7 +24,6 @@ class _ThemeTabsState extends State<ThemeTabs>
           _selectedIndex = _tabController.index;
         });
       });
-    ;
     super.initState();
   }
 

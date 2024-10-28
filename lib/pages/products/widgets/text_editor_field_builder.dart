@@ -16,8 +16,9 @@ Widget buildTextEditorField({required String label}) {
       ),
       Container(
         decoration: BoxDecoration(
-            border: Border.all(width: 1, color: Colors.grey),
-            borderRadius: const BorderRadius.all(Radius.circular(8.0))),
+          border: Border.all(width: 1, color: Colors.grey),
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+        ),
         child: Column(
           children: [
             Container(
